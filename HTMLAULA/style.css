@@ -1,11 +1,18 @@
-h1{
-    color: orangered;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-h2{
-    color: blue;
+.header li{
+    display: inline;
 }
 
-#economia h2{
-    color: green;
+.container{
+    width: 1366;
+    margin: 0 auto 0 auto;
+}
+
+.esportes{
+    display: flex;
 }
