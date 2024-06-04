@@ -4,6 +4,15 @@
     padding: 0;
 }
 
+header  h1{
+    background-color: #1b9624;
+    padding: 16px 0;
+}
+
+.header .container {
+    display: flex;
+}
+
 .header li{
     display: inline;
 }
@@ -11,8 +20,26 @@
 .container{
     width: 1366;
     margin: 0 auto 0 auto;
+    padding: 16px 0;
 }
 
 .esportes{
     display: flex;
+    padding: 16px 0;
+}
+
+#Eloy{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+h2{
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+h3{
+    margin: 30px;
+    margin-bottom: 10px;
 }
