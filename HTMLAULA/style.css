@@ -43,3 +43,15 @@ h3{
     margin: 30px;
     margin-bottom: 10px;
 }
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-size: 30px;
+}
+
+#economia{
+    background-color: rgb(56, 158, 56)
+}
