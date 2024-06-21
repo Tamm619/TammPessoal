@@ -5,11 +5,16 @@
 }
 
 header,
-section h2{
+section h2,
+section h3,
+form button{
     font-family: "Bungee", sans-serif;
+    font-weight: normal;
 }
 
-body{
+body,
+input,
+textarea{
     font-family: "Roboto", sans-serif;
 }
 
@@ -88,4 +93,61 @@ section{
 
 .fotoloja{
     margin-right: 30px;
+}
+
+.redessociais img{
+    height: 34px;
+}
+.redessociais li{
+    display: inline;
+    margin-right: 8px;
+}
+.redessociais li a{
+    text-decoration: none;
+}
+
+#contact .container{
+    display: block;
+}
+
+.contact-method{
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form button,
+form textarea{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+form textarea{
+    resize: none;
+    height: 180px;
+}
+
+#contact p{
+    font-size: 18px;
+}
+#contact h3{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+form button{
+    background-color: #182c61;
+    color: #ffff;
+    border: none;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: #4f02ac;
+}
+
+input:focus,
+textarea:focus{
+    background-color: #a5a5a6;
+    outline-color: #4f02ac
 }
