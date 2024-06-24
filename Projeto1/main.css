@@ -7,7 +7,8 @@
 header,
 section h2,
 section h3,
-form button{
+form button,
+footer{
     font-family: "Bungee", sans-serif;
     font-weight: normal;
 }
@@ -138,7 +139,7 @@ form textarea{
 
 form button{
     background-color: #182c61;
-    color: #ffff;
+    color: #ecf0f1;
     border: none;
     cursor: pointer;
 }
@@ -150,4 +151,10 @@ input:focus,
 textarea:focus{
     background-color: #a5a5a6;
     outline-color: #4f02ac
+}
+
+footer{
+    background-color: #182c61;
+    color: #ecf0f1;
+    padding: 16px 0;
 }
