@@ -47,3 +47,11 @@ header .container{
     align-items: center;
     justify-content: space-between;
 }
+
+body{
+    background-color: #14161a;
+}
+
+.site-todo{
+    color: #ffff;
+}
