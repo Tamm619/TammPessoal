@@ -46,12 +46,32 @@ header .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+}
+
+header .left-header{
+    flex: 1;
+}
+header .logo-central{
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+header .right-header { /*Aparentemente nem precisa desse, mas é bom ter*/
+    flex: 1; 
+    display: flex; 
+    justify-content: flex-end;
 }
 
 body{
     background-color: #14161a;
+    font-family: "Mukta", sans-serif;
 }
 
 .site-todo{
-    color: #ffff;
+    color: #ecf0f1;
+}
+
+body h2{
+    font-size: 48px;
 }
