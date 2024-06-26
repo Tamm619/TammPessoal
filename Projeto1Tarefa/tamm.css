@@ -106,7 +106,7 @@ body{
 .favoritetitle h3,
 .favoritetitle h3 a{
     font-size: 50px;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 40px;
     text-decoration: underline;
     color: #ecf0f1;
@@ -114,8 +114,6 @@ body{
 .favoritetitle h3 a:hover{
     color: red;
 }
-
-.favorite619{
-    display: block;
-    margin:
+#favorite p{
+    font-size: 30px;
 }
