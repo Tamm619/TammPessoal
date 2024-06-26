@@ -117,3 +117,8 @@ body{
 #favorite p{
     font-size: 30px;
 }
+
+#listawrestlers{
+    display: flex;
+    justify-content: space-between;
+}
