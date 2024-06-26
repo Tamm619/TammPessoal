@@ -68,12 +68,54 @@ body{
     font-family: "Mukta", sans-serif;
 }
 
-.site-todo{
+.sitestart,
+.favorite{
     color: #ecf0f1;
 }
 
-body h2{
+.sitestart h2{
     font-size: 48px;
 }
 
-/*fazer uma div "historia" para contar como conheci, com uma foto da capa do jogo no ps2 e ao lado um paragrafo contando a historia*/
+.sitestart h2{
+    margin-top: 85px;
+}
+
+.sitestart{
+    align-items: flex-start;
+}
+
+.conhecendo{
+    display: flex;
+    align-items: flex-start;
+    font-size: 35px;
+}
+
+#favorite {
+    font-family: "Heebo", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #ecf0f1;
+}
+.favoritetitle h2{
+    font-size: 56px;
+    margin-top: 80px;
+}
+.favoritetitle h3,
+.favoritetitle h3 a{
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    color: #ecf0f1;
+}
+.favoritetitle h3 a:hover{
+    color: red;
+}
+
+.favorite619{
+    display: block;
+    margin:
+}
