@@ -121,5 +121,41 @@ body{
 #listawrestlers{
     display: flex;
     justify-content: space-between;
+    font-family: "Heebo", sans-serif;
 }
-/*Terei que deixar cara div em coluna para centralizar certo, e também limitar os parágrafos para o tamanho da carta :) */
+
+.davebatista{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.johncena{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sheamus{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#listawrestlers h3{
+    color: #ecf0f1;
+    font-size: 30px;
+    margin-top: 80px;
+}
+
+#listawrestlers p{
+    width: 450px;
+    color: #ecf0f1;
+    font-size: 20px;
+}
+
+.copytamm{
+    margin-top: 50px;
+    font-size: 20px;
+    color: #8f0d0d;
+}
