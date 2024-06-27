@@ -159,3 +159,34 @@ body{
     font-size: 20px;
     color: #8f0d0d;
 }
+
+#contact{
+    font-family: "Heebo", sans-serif;
+    color: #ecf0f1;
+}
+
+form input,
+form button,
+form textarea{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+button{
+    background-color: #8a0303;
+    cursor: pointer;
+    border: none;
+    color: #ecf0f1;
+}
+button:hover{
+    background-color: #000000;
+}
+
+input:focus,
+textarea:focus{
+    background-color: #5c5c5d;
+    outline-color: #8a0303;
+    color: white;
+}
