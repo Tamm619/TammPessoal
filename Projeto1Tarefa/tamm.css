@@ -190,3 +190,31 @@ textarea:focus{
     outline-color: #8a0303;
     color: white;
 }
+
+#contact{
+    margin-top: 90px;
+}
+#contact h3{
+    font-size: 32px;
+    color: #8a0303;
+}
+.contact-method{
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+textarea{
+    width: 300px;
+    height: 200px;
+}
+
+footer{
+    background-color: #8a0303;
+    color: white;
+}
+.copytamm{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
