@@ -1,0 +1,95 @@
+XXXX Integrando HTML com JavaScript XXXX
+
+
+-- Documente HTML com DOM --
+
+DOM = Document Object Model
+
+https://prnt.sc/D9TN6pRyfF0p Diagrama
+
+Window - Representa o próprio navegador, ele da acesso a:
+History - Através dele podemos acessar histórico de navegação do usuário, entao podemos adicionar uma função que faz o cliente voltar para a pagina anterior dentro do site.
+Ex: window.history back faz voltar.
+
+Documento HTML - É o nosso arquivo HTML, nosso document, aqui entra o DOM.
+
+Location - Temos acesso a localização da pagina e seus parametros, com o location conseguimos recuperar o url da pagina atual. Ex: window.location.href nos da o link, e o .pathname nos da os nomes depois do url do site padrão.
+
+
+Documento HTML: é o doctype html para o navegador entender do que se trata.
+E o elemento raiz é onde tem tudo de html, de head a footer
+
+document.title = "Olá Teste" muda o titulo do Documento HTML
+document.body.innerHTML = "<h1> Olá DOM" o inner aprenderei futuramente.
+
+
+-- Selecione elementos com JavaScript --
+
+Par
+
+a acessar o DOM pelo JS, basta usar o document.getElementsByTagName("input"), nos da um array dos inputs
+
+let inputs = document.getElementsByTagName("input")
+input(1)
+
+
+pra acessar pelo id, document.getElementById("nome-beneficiario")
+
+document.getElementByTagName("form")
+document.getElementsByTagName("form")[0].getElementsByTagName("button")
+document.getElementsByClassName("container")
+
+document.querySelector("input") nos traz o primeiro elemento de input no codigo
+
+document.querySelector("input[type=number]")
+document.querySelector("input#numero-conta")
+document.head
+document.body
+
+
+
+
+
+
+-- Desenvolva Formularios com JavaScript --
+
+document.getElementById("nome-beneficiario")
+
+nomeBeneficiario.value = "Mateus Gonçalves" é como se fosse a ação do cliente mandando o nome no formulário para nos
+
+
+nomeBeneficiario.id, .required, todos os valores setados nos comandos, sao possiveis ver com java.
+
+
+let valorDeposito = document.getElementById("valor-deposito")
+
+valorDeposito.value = "dez" (vai dar erro, pois é apenas numeros)
+
+
+como o site está, se a pessoa colocar o nome no "Nome Completo" vai ser aprovado, mas precisa ser completo, e para fazer isso pelo java, é:
+
+nomeBeneficiario
+nomeBeneficiario.value
+nomeBeneficiario.value.split(" ")
+nomeBeneficiario.value.split(" ").length vai dar 1, então usa o .length > 2
+nomeBeneficiario.value.split(" ").length > 2 vai dar false, mas se colocar 3 nomes, funciona
+
+
+document.getElementById("btn-depositar").disabled = true
+se clicar no botao, ele nao vai funcionar, e se setar como false, vai voltar a funcionar
+
+document.getElementById("btn-depositar").disabled = nomeBeneficiario.value.split(" ").length < 2
+
+se eu setar isso com o .value (nome digitado) tendo um nome, vai cancelar o botao, e se usar esse comando com mais de 2 nomes, funciona normal
+
+
+
+
+-- Adicione eventos a elementos HTML --
+
+
+
+Inspecionar elemento - 3 pontinhos e deixar o console embaixo.
+criar main.js
+
+if (!(COMANDO DA COMPARAÇÃO)) funcionou no javascript, mas o if comando == false/true

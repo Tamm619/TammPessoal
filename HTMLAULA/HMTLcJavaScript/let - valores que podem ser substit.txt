@@ -1,0 +1,133 @@
+let - valores que podem ser substituidos
+const - valores que nao podem ser substituidos e devem ser iniciados com algum valor
+
+
+let fruta = 'banana'
+
+para chamar basta digitar fruta e dar enter
+(aparentemente a "variavel" é só um comando que a gente cria, como se eu chegasse no vscode e criasse uma var html:5 que cria tudo aquilo puxado)
+
+let fruta = "maça";
+
+será trocado
+
+fruta = "banana";
+vai trocar
+
+
+const animal = "cachorro";
+
+const animal = "girafa";
+Funciona, porém
+
+animal = "cachorro";
+não executa pois não é permitido
+
+
+= contribui valor, == compara
+
+fruta == "Banana" vai dar false, e se usar banana da true
+
+quando em variavel usar nome com mais de 1 palavra, usar camelCase
+
+let nomeCompleto;
+
+let calcularDoisNumeros;
+
+
+
+
+
+
+
+
+JavaScript é uma linguagem dinamica, permite que criemos o tipo de dado quando criar a variavel junto
+(Creio eu q seja o "let fruta = "banana"", pois n precisa criar o let fruta e dps usar fruta = banana)
+
+let primeiroNumero = "5" seria o texto 5, mas let primeiroNumero = 5 seria o numero 5 mesmo, creio q tenha q ter o ; no final
+
+typeof(8) daria number, typeof(8.1) daria number, typeof("") e ("asd") daria string, pois é um texto.
+typeof(fruta) daria string, e por que? porque o valor da variavel é uma string.
+E se nao existir variavel fruta, dará como undefined.
+
+let verdadeiro = true;
+typeof(verdadeiro) daria boolean
+
+
+let primeiroNumero = "5"
+typeof("primeiroNumero") daria string, pois variaveis do tipo let sao mutaveis.
+
+
+parseint valores inteiros
+parsefloat valor inteiro e decimal
+
+typeof(parseInt(primeiroNumero)) daria number
+
+parseint(primeiroNumero) daria 5
+
+parseint(nome) daria NaN (Not a Number)
+
+
+
+
+
+
+
+
+-- Aprenda listas de Array --
+Arrays são variaveis em formato de listas
+a gente declara como valores constantes, mas chamar o valor com []
+
+const listaDeMaterias = ["hmtl", "CSS", "Javascript"]
+
+ao digitar no console listaDeMaterias, virá (3) ["HTML", "CSS", "Javascript"]
+                                               0: "HTML"
+                                               1: "CSS"
+                                               2: "Javascript"
+                                               length: 3
+
+se eu digito listaDeMaterias[1], ele me da o resultado da variavel 1 dentro do array, que seria o CSS, INDICE 1, e nao variavel 1.
+
+o listaDeMaterias.length mostra quantos valores tem dentro da lista
+
+listaDeMaterias.push("jQuery") acrescenta o quarto indice de jQuery contendo agora 4 itens
+listaDeMaterias.splice(1,1) Deleta 1 item e que seja o numero 1 da lista.
+
+
+
+
+
+
+-- Crie Repetições (Laços) --
+let nomes = ["Maria","José","João"]
+nomes:    (3) ["Maria","José","João"] length: 3 // nomes[0]: Maria
+
+for(let i = 0; i < nomes.length; i++){
+	console.log("O nome é: " + nomes[i])
+
+
+while/enquanto é uma forma também de criar looping, mas o while pode criar um looping infinito.
+
+let saudacoes = 0;
+while (saudacoes < nomes.length){
+	console.log ("O nome é: " +nomes[saudacoes])
+	saudacoes++
+
+
+
+-- Use Condicionais --
+Estrutura condicional tem o foco de criar caminhos para que tenha mais de 1 resposta numa questão que tivermos em nosso codigo (basicamente fluxograma na linguagem C do inicio do curso.
+
+
+let idade = prompt("Bem vindo ao sistema eleitoral, digite sua idade para cadastrar.")
+if(idade >=16){
+	alert("Certo, vamos prosseguir com o cadastro.")
+} else{
+	alert("Para prosseguir, voce precisa ter 16 anos no minimo.")
+}
+
+
+
+let idade = prompt("Bem vindo ao sistema eleitoral, digite sua idade para cadastrar.")
+const resultadoidade = idade >= 16 ? "Certo, vamos prosseguir com o cadastro." : "Para prosseguir, voce precisa ter 16 anos no minimo"
+alert(resultado)
