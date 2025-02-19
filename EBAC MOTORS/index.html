@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="container container-flex">
             <h1>EBAC Motors</h1>
             <div class="menu-hamburguer">
                 <span></span>
@@ -48,6 +48,46 @@
         <img src="images/slide3.png" alt="Carro Ford">
     </div>
 
+    <section id="sobre-loja-real">
+        <div class="container container-flex">
+            <img src="./images/loja.jpg" alt="lojaebac">
+            <div>
+                <h2>Sobre a Ebac Motors</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil soluta necessitatibus quas rerum provident ab aliquid odit, vel quod quaerat! Officiis quisquam obcaecati esse iste doloremque distinctio ab omnis aperiam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis vero quasi aspernatur? Iure illo consectetur fuga reprehenderit laudantium, numquam accusantium error voluptates voluptas facilis inventore esse ipsam sint velit ex?</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Em destaque</h2>
+            <ul class="container-flex lista-veiculos">
+                <li>
+                    <img src="./images/carro-bmw.png" alt="carrobmw">
+                    <h3>Carro BMW</h3>
+                    <p>Cambio automático, quatro portas, vidros e travas elétricas</p>
+                    <strong>R$ 75.000,00</strong>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="./images/fusca.png" alt="fusca-venda">
+                    <h3>Carro Fusca</h3>
+                    <p>Design clássico, duas portas, vidros e parabrisa</p>
+                    <strong>R$ 8.000,00</strong>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./images/moto-bmw.png" alt="motobmw">
+                    <h3>Moto BMW</h3>
+                    <p>Freio ABS, deisgn esportivo, três cilindros e 900cc</p>
+                    <strong>R$ 68.000,00</strong>
+                    <button type="button">Tenho interesse</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -55,6 +95,10 @@
         $(document).ready(function(){
             $('#carousel-imagens').slick({
                 autoplay:true
+            });
+
+            $('.menu-hamburguer').click(function(){
+                $('nav').slideToggle();
             })
         })
     </script>
