@@ -1,0 +1,41 @@
+.container{
+    max-width: 1024px;
+}
+
+.container-header{
+    background-color: rgb(43, 34, 95);
+    border-radius: 30px;
+    text-align: center;
+    color: azure;
+    padding: 16px;
+}
+
+.container{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container h2{
+    margin-top: 56px;
+}
+
+.infos{
+    background-color: rgb(26, 26, 26);
+    margin-top: 24px;
+    padding: 16px;
+    border-radius: 45px;
+}
+
+.form-check{
+    display: inline-block;
+}
+
+input.form-control{
+    background-color:gray;
+}
+
+.form-check-label a{
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "git",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch source/main.scss build/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tamm619/TammPessoal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tamm619/TammPessoal/issues"
+  },
+  "homepage": "https://github.com/Tamm619/TammPessoal#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
+}
