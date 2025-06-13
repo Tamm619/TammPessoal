@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clone Disney+</title>
+    <title>Dying Light</title>
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
-<!-- As imagens sendo minificadas pelo gulp estão dando erro, pois já estão minificadas, necessário colar as originais caso problema -->
 <body>
     <header class="header">
         <div class="header__container">
             <h1>
-                <img class="header__logo" src="./dist/images/dl-logopreta.png" alt="Disney+">
+                <img class="header__logo" src="./dist/images/dl-logopreta.png" alt="Titulo Dying Light">
             </h1>
             <div class="header__logotopo">
                 <a href="https://dyinglightgame.com"><img src="./dist/images/dl-redondo.png" alt="Logo Dying Light"></a>
@@ -40,7 +39,7 @@
             </p>
             <ul class="hero__content__combos">
                 <li class="hero__content__combos__combo">
-                    <img src="./dist/images/dl-wallpaper.jpg" alt="Diney+ - Star+ - Combo+">
+                    <img src="./dist/images/dl-wallpaper.jpg" alt="Seção para compra">
                     <a href="#comprar-jogo"><button class="buttonR">COMPRE AGORA</button></a>
                     <span class="text">O preço pode variar dependendo das versões.</span>
                 </li>
@@ -53,43 +52,43 @@
         </div>
     </section>
 
-    <section class="shows">
+    <section class="versoes-jogos">
         <h2 class="title version">Jogos e Edições</h2>
-        <nav class="shows__tabs">
-            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is--active">
+        <nav class="versoes-jogos__tabs">
+            <button data-tab-button="DL1" class="versoes-jogos__tabs__button versoes-jogos__tabs__button--is--active">
                 Dying Light
             </button>
-            <button data-tab-button="populares" class="shows__tabs__button">
+            <button data-tab-button="DL2" class="versoes-jogos__tabs__button">
                 Dying Light Stay Human
             </button>
-            <button data-tab-button="maisstar" class="shows__tabs__button">
+            <button data-tab-button="DL3" class="versoes-jogos__tabs__button">
                 Dying Light The Beast
             </button>
         </nav>
-        <ul data-tab-id="em_breve" class="shows__list shows__list--is--active">
-            <li class="shows__list__item">
+        <ul data-tab-id="DL1" class="versoes-jogos__list versoes-jogos__list--is--active">
+            <li class="versoes-jogos__list__item">
                 <img src="./dist/images/DL1/dl-standard.avif" alt="DL1 Standard">
             </li>
-            <li class="shows__list__item">
+            <li class="versoes-jogos__list__item">
                 <img src="./dist/images/DL1/dl-enhanced.avif" alt="DL1 Enhanced">
             </li>
-            <li class="shows__list__item">
+            <li class="versoes-jogos__list__item">
                 <img src="./dist/images/DL1/dl-definitive.avif" alt="DL1 Definitive">
             </li>
         </ul>
-        <ul data-tab-id="populares" class="shows__list">
-            <li class="shows__list__item">
+        <ul data-tab-id="DL2" class="versoes-jogos__list">
+            <li class="versoes-jogos__list__item">
                 <img src="./dist/images/DL2/dl2-reloaded.avif" alt="DL2 Reloaded">
             </li>
-            <li class="shows__list__item">
+            <li class="versoes-jogos__list__item">
                 <img src="./dist/images/DL2/dl2-extra.avif" alt="DL2 Extra">
             </li>
         </ul>
-        <ul data-tab-id="maisstar" class="shows__list">
-            <li class="shows__list__item">
+        <ul data-tab-id="DL3" class="versoes-jogos__list">
+            <li class="versoes-jogos__list__item">
                 <img src="./dist/images/DL3/dl3-standard.avif" alt="DL3 Standard">
             </li>
-            <li class="shows__list__item">
+            <li class="versoes-jogos__list__item">
                 <img src="./dist/images/DL3/dl3-deluxe.avif" alt="DL3 Deluxe">
             </li>
         </ul>
