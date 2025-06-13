@@ -1,0 +1,39 @@
+@keyframes glowRespirando {
+    0%, 100% {
+    box-shadow: 0 0 35px rgba(255, 108, 10, 0.65);
+    }
+    50% {
+    box-shadow: 0 0 65px rgba(255, 108, 10, 1);
+    }
+
+}
+.trailer{
+    background-image: url(../../dist/images/dl-trailer-background.jpg);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 40px 5.6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__left,
+    &__right {
+        flex: 1;
+    }
+
+    iframe {
+        border-radius: 20px;
+        transform: translateY(-10%);
+    }
+
+}
+
+
+.trailer__right .video iframe {
+    display: inline-block;
+    border-radius: 20px;
+    animation: glowRespirando 3.5s ease-in-out infinite;
+    background-color: #000;
+}
+
