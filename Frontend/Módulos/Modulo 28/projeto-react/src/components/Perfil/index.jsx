@@ -1,14 +1,14 @@
-import "./perfil.css"
-const Perfil = (props) => {
+import styles from './Perfil.module.css';
 
-    const {endereco, nome} = props;
 
+const Perfil = ({ nomeUsuario }) => {
     return (
-        <div>
-            {JSON.stringify(props)}
-            <img className="perfil-avatar" src={endereco}/>
-            <h3 className="perfil-titulo">{nome}</h3>
-        </div>
+        <header className={styles.header}>
+            <img className={styles.avatar} src={`https://github.com/${nomeUsuario}.png`}/>
+            <h1 className={styles.name}>
+                {nomeUsuario}
+                </h1>
+        </header>
     )
 }
 
