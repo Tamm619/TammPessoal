@@ -1,0 +1,94 @@
+.marginBottom8 {
+  margin-bottom: 8px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Share Tech", sans-serif;
+}
+body {
+  background-color: #3d3d3d;
+  color: #67e6dc;
+}
+li {
+  list-style: none;
+}
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 70%;
+  }
+}
+header {
+  padding-bottom: 24px;
+}
+header .profile-avatar {
+  display: block;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+}
+.profile-bio {
+  text-align: center;
+}
+.profile-bio .profile-bio-name {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.profile-bio .profile-bio-sub {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.profile-bio .profile-bio-desc {
+  font-size: 16px;
+  opacity: 0.75;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 360px;
+  width: 100%;
+  margin: 0 auto;
+}
+.social-links img {
+  transition: all ease 0.3s;
+}
+.social-links img:hover {
+  transform: scale(1.45);
+}
+.project-list {
+  margin-top: 32px;
+}
+.project-list-item a {
+  text-decoration: none;
+  background-color: #7158e2;
+  display: block;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  text-align: center;
+  border-radius: 30px;
+  font-weight: bold;
+  color: #67e6dc;
+  border: 3px solid #7158e2;
+}
+.project-list-item a:hover {
+  transition: all ease 0.4s;
+  transform: scale(1.05);
+  font-size: 20px;
+  border: #7158e2 solid 3px;
+  background-color: transparent;
+  color: #7158e2;
+}

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dying Light</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/dl-logopreta.png" alt="Titulo Dying Light">
+            </h1>
+            <div class="header__logotopo">
+                <a href="https://dyinglightgame.com"><img src="./dist/images/dl-redondo.png" alt="Logo Dying Light"></a>
+            </div>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a class="buttonR buttonR--secondary" href="#herohome">HOME</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero" id="herohome">
+        <div class="hero__content">
+            <div class="dl-background">
+                <img src="https://repo.techland.gg/img/logos/dltb_light_small_en.png" alt="DL THE BEAST">
+            </div>
+            <h3 class="title">
+                Dying Light The Beast <br>
+                Lançará em 22 de Agosto!
+            </h3>
+            <p>
+                <span class="title--small">
+                    Garanta já na pré-venda!
+                </span>
+            </p>
+            <ul class="hero__content__combos">
+                <li class="hero__content__combos__combo">
+                    <img src="./dist/images/dl-wallpaper.jpg" alt="Seção para compra">
+                    <a href="#comprar-jogo"><button class="buttonR">COMPRE AGORA</button></a>
+                    <span class="text">O preço pode variar dependendo das versões.</span>
+                </li>
+                <li class="hero__content__combos__combo">
+                    <img src="./dist/images/dl-trailer.jpg" alt="Imagem do Trailer">
+                    <a href="#trailerdl3"><button class="buttonR">ASSISTA AGORA</button></a>
+                    <span class="text">Trailer oficial da produtora.</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="versoes-jogos">
+        <h2 class="title version">Jogos e Edições</h2>
+        <nav class="versoes-jogos__tabs">
+            <button data-tab-button="DL1" class="versoes-jogos__tabs__button versoes-jogos__tabs__button--is--active">
+                Dying Light
+            </button>
+            <button data-tab-button="DL2" class="versoes-jogos__tabs__button">
+                Dying Light Stay Human
+            </button>
+            <button data-tab-button="DL3" class="versoes-jogos__tabs__button">
+                Dying Light The Beast
+            </button>
+        </nav>
+        <ul data-tab-id="DL1" class="versoes-jogos__list versoes-jogos__list--is--active">
+            <li class="versoes-jogos__list__item">
+                <img src="./dist/images/DL1/dl-standard.avif" alt="DL1 Standard">
+            </li>
+            <li class="versoes-jogos__list__item">
+                <img src="./dist/images/DL1/dl-enhanced.avif" alt="DL1 Enhanced">
+            </li>
+            <li class="versoes-jogos__list__item">
+                <img src="./dist/images/DL1/dl-definitive.avif" alt="DL1 Definitive">
+            </li>
+        </ul>
+        <ul data-tab-id="DL2" class="versoes-jogos__list">
+            <li class="versoes-jogos__list__item">
+                <img src="./dist/images/DL2/dl2-reloaded.avif" alt="DL2 Reloaded">
+            </li>
+            <li class="versoes-jogos__list__item">
+                <img src="./dist/images/DL2/dl2-extra.avif" alt="DL2 Extra">
+            </li>
+        </ul>
+        <ul data-tab-id="DL3" class="versoes-jogos__list">
+            <li class="versoes-jogos__list__item">
+                <img src="./dist/images/DL3/dl3-standard.avif" alt="DL3 Standard">
+            </li>
+            <li class="versoes-jogos__list__item">
+                <img src="./dist/images/DL3/dl3-deluxe.avif" alt="DL3 Deluxe">
+            </li>
+        </ul>
+    </section>
+
+    <section class="trailer" id="trailerdl3">
+        <div class="trailer__left">
+            <img src="./dist/images/dl-rahin.png" alt="Rahim">
+        </div>
+        <div class="trailer__right">
+            <div class="video">
+                <iframe 
+            width="948" 
+            height="533" 
+            src="https://www.youtube.com/embed/c50gFkG91jc" 
+            title="Dying Ligh The Beast Trailer" 
+            frameborder="0"
+            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="comprar__jogo" id="comprar-jogo">
+        <h2 class="title--big">Compre Dying Light na Steam</h2>
+        <ul class="comprar__jogo__list">
+            <li class="comprar__jogo__list__item">
+                <img class="imagem-jogos" src="./dist/images/DL1/dl-standard.avif" alt="Venda Jogo 1">
+                <strong class="title--small">R$ 50,99</strong>
+                <p class="text--big">
+                    Jogo base, preço pode variar dependendo das outras versões/edições.
+                </p>
+                <button class="buttonR ">COMPRAR</button>
+            </li>
+            <li class="comprar__jogo__list__item">
+                <img class="imagem-jogos" src="./dist/images/DL2/dl2-reloaded.avif" alt="Venda Jogo 2">
+                <strong class="title--small">R$ 82,17</strong>
+                <p class="text--big">
+                    Jogo base, preço pode variar dependendo das outras versões/edições.
+                </p>
+                <button class="buttonR ">COMPRAR</button>
+            </li>
+            <li class="comprar__jogo__list__item">
+                <img class="imagem-jogos" src="./dist/images/DL3/dl3-standard.avif" alt="Venda Jogo 3">
+                <strong class="title--small">R$ 249,00</strong>
+                <p class="text--big">
+                    Jogo base, preço pode variar dependendo das outras versões/edições.
+                </p>
+                <button class="buttonR ">COMPRAR</button>
+            </li>
+        </ul>
+    </section>
+
+    <section class="comprar__produtos">
+        <h2 class="title--big">Compre produtos de Dying Light</h2>
+        <ul class="comprar__produtos__list">
+            <li class="comprar__produtos__list__item">
+                <img class="imagem-jogos" src="./dist/images/dl-caneca.png" alt="Caneca">
+                <strong class="title--small">R$ 48,60</strong>
+                <p class="text--big">
+                    Canecas tematicas do jogo para sentir a pura imersão.
+                </p>
+                <button class="buttonR cosmetic">COMPRAR</button>
+            </li>
+            <li class="comprar__produtos__list__item">
+                <img class="imagem-jogos" src="./dist/images/dl-quadro1.png" alt="Quadro zumbi">
+                <strong class="title--small">R$ 89,90</strong>
+                <p class="text--big">
+                    Quadro de zumbis Dying Light, para um ar mais apocalíptico.
+                </p>
+                <button class="buttonR cosmetic">COMPRAR</button>
+            </li>
+            <li class="comprar__produtos__list__item">
+                <img class="imagem-jogos" src="./dist/images/dl-quadro2.png" alt="Quadro zumbi">
+                <strong class="title--small">R$ 89,90</strong>
+                <p class="text--big">
+                    Quadro de Dying Light Stay Human, o segundo da franquia.
+                </p>
+                <button class="buttonR cosmetic">COMPRAR</button>
+            </li>
+        </ul>
+    </section>
+
+    <section class="devices">
+        <h2 class="title">Disponível nos seguintes dispositivos</h2>
+        <ul class="devices__list">
+        <li class="devices__list__item">
+            <img src="./dist/images/pc-icon.png" alt="Computador">
+            <h4 class="title--small">Computador</h4>
+            <ul class="text">
+                <li>PC Windows</li>
+                <li>MacOS</li>
+            </ul>
+        </li>
+        <li class="devices__list__item">
+            <img src="./dist/images/celular.png" alt="Celular">
+            <h4 class="title--small">Celular</h4>
+            <ul class="text">
+                <li>Em Desenvolvimento.</li>
+            </ul>
+        </li>
+        <li class="devices__list__item">
+            <img src="./dist/images/console-icon.png" alt="Video Game">
+            <h4 class="title--small">Videogames</h4>
+            <ul class="text">
+                <li>PS4</li>
+                <li>PS5</li>
+                <li>Xbox One</li>
+                <li>Xbox Series X</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section class="faq">
+    <h2 class="title">Perguntas Frequentes</h2>
+    <ul class="faq__questions">
+        <li class="faq__questions__item">
+            <div class="faq__questions__item__question" data-faq-question>
+                O que vem nas versões diferentes?
+            </div>
+            <div class="faq__questions__item__answer text--big">
+                <ul>
+                    <li>Dependendo de cada versão, vem um pacote com DLCs específicas.</li>
+                    <li>Por comum, a versão deluxe é conhecida por vir todas as DLCs existentes no pacote, porém no primeiro Dying Light, essa versão se chama Definitive Edition.</li>
+                    <li>As DLCs tem o padrão de vir um pacote de skins de armas, uma roupa para o personagem e dependendo do jogo skin de carros.</li>
+                    <li>Todas elas podem ser pré-visualizadas antes da compra, seja na Steam, Epic Games, Playstation Store etc...</li>
+                </ul>
+            </div>
+        </li>
+        <li class="faq__questions__item">
+            <div class="faq__questions__item__question" data-faq-question>
+                Quais formas de pagamento posso utilizar?
+            </div>
+            <div class="faq__questions__item__answer text--big">
+                Vai depender da plataforma, na steam por exemplo pode ser comprado por pix, cartão de crédito e com a própria carteira do aplicativo.
+            </div>
+        </li>
+        <li class="faq__questions__item">
+            <div class="faq__questions__item__question" data-faq-question>
+                É possível haver um adiamento na data de lançamento de <b>Dying Light The Beast</b>?
+            </div>
+            <div class="faq__questions__item__answer text--big">
+                Infelizmente existe uma pequena chance, mas quase nula, então pode ficar bem confiante que o lançamento será na data, ou no máximo, próxima a ela.
+            </div>
+        </li>
+    </ul>
+</section>
+
+<footer class="footer">
+<div class="footer__container">
+        <div class="footer__cima">
+            <img class="footer__logo" src="./dist/images/dl-logobranca.png" alt="Dying Light Footer">
+        <div class="footer__container__linguagem-dl">
+            <li class="footer__links__item">
+                <div class="linguagem">
+                    <img src="./dist/images/globe.svg">
+                    <select class="text--small">
+                        <option>English</option>
+                        <option selected>Português</option>
+                    </select>
+                </div>
+            </li>
+        </div>
+        </div>
+    <div class="footer__baixo">
+        <div class="footer__baixo__links">
+            <ul class="footer__links">
+        <li class="footer__links__item">
+            <a class="text" href="#"><b>TECHLAND</b></a>
+        </li>
+        <li class="footer__links__item">
+            <a class="text" href="#"><b>SUPPORT</b></a>
+        </li>
+        <li class="footer__links__item">
+            <a class="text" href="#"><b>EU PROJECTS</b></a>
+        </li>
+        <li class="footer__links__item">
+            <a class="text" href="#"><b>CONTACT & PRESS CENTER</b></a> 
+        </li>
+    </ul>
+    <ul class="footer__links">
+        <li class="footer__links__item">
+            <p class="text">&copy;2025 Techland S.A. All rights reserved.</p>
+        </li>
+        <li class="footer__links__item">
+            <a class="text" href="#">Terms of service</a>
+        </li>
+        <li class="footer__links__item">
+            <a class="text" href="#">Privacy Policy</a>
+        </li>
+    </ul>
+        </div>
+    <div class="footer__baixo__img">
+        <img src="./dist/images/dl-18.svg" alt="+18">
+    </div>
+    </div>
+</div>
+</footer>
+
+    <script src="./dist/js/main.js"></script>
+</body>
+</html>

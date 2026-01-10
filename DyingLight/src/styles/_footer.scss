@@ -1,0 +1,92 @@
+@use 'variaveis';
+
+.footer{
+    &__container {
+        width: 100%;
+        margin: 0 auto;
+        background-color: variaveis.$cor-escura;
+
+        &__linguagem-dl{
+            display: flex;
+            justify-content: end;
+        }
+    }
+
+    .footer__cima{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer__baixo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__img{
+            padding: 10px;
+        }
+        img{
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    &__logo{
+        width: 120px;
+        margin: 0 10px 10px 0;
+    }
+
+    &__links{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: left;
+
+    &__links:not(:last-child){
+        padding-bottom: 12px;
+    }
+
+        p{
+            margin-left: 16px;
+        }
+
+        &__item{
+            display: inline-block;
+            a{
+                text-decoration: none;
+                padding: 8px 16px;
+                display: block;
+
+                &:hover{
+                    color: variaveis.$corTextoSecundario;
+                }
+            }
+        }
+    }
+}
+
+.linguagem{
+    display: flex;
+    align-items: center;
+
+    img{
+        height: 18px;
+        width: 18px;
+    }
+
+    select {
+        height: 38px;
+        background-color: transparent;
+        border: 1px solid variaveis.$cor-escura;
+        color: variaveis.$corTextoPrincipal;
+
+        &:hover{
+            color: variaveis.$corTextoSecundario
+        }
+
+        option{
+            color: variaveis.$corDeFundo;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+@use 'variaveis';
+
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: variaveis.$cor-dyinglight;
+    transition: background-color .5s ease;
+    z-index: 1;
+
+    &--is--hidden{
+        background-color: transparent;
+
+        .header{
+            &__logo, &__logotopo, &__links__item{
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity .5s ease;
+            }
+        }
+    }
+
+    &__container{
+        padding: 8px 36px;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 768px){
+            padding: 0 12px 0 20px;
+        }
+    }
+
+    &__logo{
+        margin: 0px 5px;
+        margin-bottom: 0px;
+        max-width: 120px;
+        width: 100%;
+        transition: opacity .5s ease;
+
+        @media (max-width: 768px){
+            max-width: 64px;
+        }
+    }
+
+    &__logotopo{
+        padding: 0;
+        display: flex;
+        top: 0;
+        transform: translateX(-50%);
+        img{
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+
+    &__links{
+        display: flex;
+        list-style: none;
+        &__item{
+            margin: 5px;
+            margin-top: 7px;
+            transition: opacity .5s ease;
+            a{
+                background-color: black;
+
+                &:hover{
+                    background-color: #000;
+                }
+            }
+        }
+    }
+
+    .buttonR{
+        height: 50px;
+        border-radius: 4px;
+
+        @media (max-width: 768px){
+            font-size: 13px;
+            padding: 8px 11px;
+            height: 40px;
+            letter-spacing: 0;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+@use 'variaveis';
+
+.versoes-jogos {
+    padding: 10vw 5.6vw;
+    min-height: 50vw;
+
+    .version{
+        text-align: center;
+        margin-bottom: 56px;
+        margin-top: 80px;
+    }
+
+    &__list{
+        margin-top: 44px;
+        display: none;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        li{
+                list-style: none;
+            }
+
+        &--is--active{
+            display: flex;
+            justify-content: center;
+        }
+
+        &__item{
+            img{
+                width: 373px;
+                height: 210px;
+                border-radius: 6px;
+                border: 2px solid variaveis.$cor-dyinglight;
+            }
+            
+            @media (max-width: 768px){
+                font-size: 16px;
+            }
+        }
+    }
+
+
+    &__tabs{
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 768px){
+            white-space: nowrap;
+            overflow-x: scroll;
+            padding-left: 100px;
+        }
+
+        &__button{
+            color: variaveis.$corTextoSecundario;
+            font-size: 20px;
+            background: none;
+            border: none;
+            margin: 0 1vw;
+            cursor: pointer;
+            border-bottom: 5px solid transparent;
+
+            &--is--active {
+                border-color: variaveis.$corTextoSecundario;
+                font-weight: bold;
+            }
+        }
+    }
+}

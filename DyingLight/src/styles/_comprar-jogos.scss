@@ -1,0 +1,48 @@
+.comprar__jogo {
+    padding: 5.6vw;
+
+    .buttonR{
+        margin-top: 24px;
+        margin-bottom: 8px;
+    }
+    
+    h2{
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+
+        @media (max-width: 768px){
+            display: block;
+        }
+
+        li{
+                list-style: none;
+            }
+
+        &__item{
+            text-align: center;
+            padding: 60px 44px 44px;
+            max-width: 380px;
+            width: 100%;
+            
+
+            img{
+                width: 100%;
+            }
+
+            strong{
+                display: block;
+                margin-top: 24px;
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+
+}
